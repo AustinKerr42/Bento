@@ -5,7 +5,7 @@ const descElement = document.querySelector('.temperature-description p');
 // App data
 const weather = {};
 weather.temperature = {
-    unit: 'celsius',
+  unit: 'celsius',
 };
 
 // Change to 'F' for Fahrenheit
@@ -13,18 +13,17 @@ var tempUnit = 'C';
 
 const KELVIN = 273.15;
 // Use your own key for the Weather, Get it here: https://openweathermap.org/
-const key = 'aa5b0a76dfbf87541928fb3cc32d3d69';
+const key = '55a1bb1d7f3c213cc283a8e7a6a9ad2d';
 
 // Set Position function
 setPosition();
 
 function setPosition(position) {
-    // Here you can change your position
-    // You can use https://www.latlong.net/ to get it! (I use San Francisco as an example)
-    let latitude = 37.774929;
-    let longitude = -122.419418;
+  // You can use https://www.latlong.net/ to get it!
+  let latitude = 39.099728;
+  let longitude = -94.578568;
 
-    getWeather(latitude, longitude);
+  getWeather(latitude, longitude);
 }
 
 // Get the Weather data
